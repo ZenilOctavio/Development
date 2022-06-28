@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueva pestaña</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/6616bd7cf0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <ul id="markers">
+        <!-- <li class="marker"><img class="marker-icon" src="https://unavatar.io/google/facebook.com" alt=""><a href="https://facebook.com">Facebook</a></li> -->
+      </ul>
+      <hr class="navDivider" />
+      <nav>
+        <div class="container">
+          <ul>
+            <li id="user">User</li>
+            <li><div class="icontainer">
+                <div class="iconP" style="--sep: 0"></div>
+                <div class="iconP" style="--sep: 2px"></div>
+                <div class="iconP" style="--sep: 2px"></div>
+            </div></li>
+            <li>
+                <a href="https://www.google.com.mx/imghp?hl=es&tab=ri&ogbl"
+                >Imágenes</a>
+            </li>
+            <li><a href="https://mail.google.com/mail">Gmail</a></li>
+        </ul>
+
+        </div>
+      </nav>
+    </header>
+    <section id="search">
+      <h1>
+        <span id="titulo">oogl</span>
+      </h1>
+      <div class="inputWrapper">
+        <div class="icon-container">
+          <span id="lupa"></span>
+        </div>
+        <input type="text" name="input" id="input" placeholder="Buscar en Google o escribir una URL" />
+        <div class="button-container">
+          <button>
+            <!-- <span id="microphone"></span> -->
+            <img src="img/mic.ico" alt="mic" srcset="" id="mic">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="shortcuts">
+      <div class="shortcuts-wrapper">
+        <!-- <a rel="" class="shortcut">
+          <div class="shortcut-menu-wrapper">
+            <div class="shortcut-menu"></div>
+          </div>
+          <div class="shortcut-icon">
+            <img src="https://unavatar.io/google/facebook.com">
+          </div>
+          <span class="shortcut-name">Facebook</span>
+        </a> -->
+      </div>  
+    </section>
+    <script src="/js/element.js"></script>
+    <script src="/js/shortcuts.js"></script>
+    <script src="/js/markers.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
