@@ -1,0 +1,33 @@
+/* #texto{
+    display: block;
+    width: 400px;
+    font-size: 40px;
+    border: 3px solid red;
+    writing-mode: vertical-lr;
+    Vertical nos deja acomodar el texto como una torre
+    lr nos acomodará el texto desde la izquierda hacia la derecha
+    lr nos acomodará el texto desde la derecha hacia la izquierda
+    white-space: nowrap;
+    overflow: hidden;
+}
+#sub{
+    display: inline;
+} */
+
+body{
+    background-color: bisque;
+}
+#texto{
+    width: 200px;
+    border: 3px solid brown;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    font-size: 24px;
+    margin: 0;
+    background-color: white;
+    resize: both;
+    /* Esta propiedad hace que el elemento pueda acondicionar su tamaño
+    por medio del cursor, dejando la propiedad width como solo inicial */
+}

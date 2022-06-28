@@ -1,0 +1,45 @@
+html{
+    font-family: 'Nunito';
+}
+h1{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-align: center;
+}
+table{
+    width: 50%; 
+    /* Esto es para que nuestra tabla abarque toda la página */
+}
+th{
+    background-color: #77DF56;
+
+}
+table,th,td{
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* text-align: center; */
+    border: 1px solid black;
+    border-collapse: collapse; 
+    /* no se puede tener collapse y spacing al mismo tiempo */
+    /*Collapse borra el borde interno de la tabla y el spacing aumenta la distancia entre el externo y el interno*/
+    /* border-spacing: 5px; */
+    padding: 3px;
+    margin: 0 auto;
+}
+caption {
+    font-weight: bolder;
+    font-size: large;
+}
+td:hover{
+    background-color: #003747;
+    color: white;
+}
+/* renglones pares */
+tr:nth-child(even){
+    background-color: aqua;
+}
+/* renglones impares */
+tr:nth-child(odd){
+    background-color: red;
+}
+tr:hover{
+    background-color: #8800CB;
+}

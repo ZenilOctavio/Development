@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con Javascript</title>
+</head>
+<body>
+    <h1>Manejo DOM con Javascript</h1>
+    <br/>
+    Nombre: <input type="text" id="nombre" value="">
+    <br/><br/>
+    Apellido: <input type="text" id="apellido" value="">
+    <br><br/>
+    <button id="boton" onclick="verificar(this,document.getElementById('nombre'),document.getElementById('apellido'))">Verificar</button>
+    <br><br/><br><br/>
+    <h2>Con "form"</h2>
+    <form id="formulario">
+        Nombre: <input type="text" id="nom" value="">
+        Apellido: <input type="text" id = "apelli" value="">
+        <br><br/>
+        <button onclick="verificar(this,document.getElementById('formulario')['nom'],document.getElementById('formulario')['apelli'])">Verificar</button>
+    </form>
+    <script>
+        document.getElementById('nombre').addEventListener('focus', (evento) => {
+            evento.target.style.background = 'yellow';  //Tamién se puede hacer así con funciones flecha
+        });
+        document.getElementById('apellido').addEventListener('focus', cambiar);
+        document.getElementById('nombre').addEventListener('blur',volver);
+        document.getElementById('apellido').addEventListener('blur',volver);
+
+        //Con form
+        document.getElementById('formulario').addEventListener('focus',(evento)=>{
+            evento.target.style.background = 'pink';//Es necesario un "true" para que el cambio afecte a los elementos internos del formulario.
+        },true);        
+        document.getElementById('formulario').addEventListener('blur',(evento)=>{
+            evento.target.style.background = 'white';
+        },true);
+
+        //Funciones
+        function cambiar(evento){
+            let componente = evento.target;
+            componente.style.background = 'yellow';
+        }
+        function volver(evento){
+            let componente = evento.target;
+            componente.style.background = 'white';
+        }
+        function verificar(boton,nombre,apellido){
+            if(nombre.value == "Octavio" && apellido.value == "Zenil"){
+                nombre.style.background = 'green';
+                apellido.style.background = 'green';
+            }
+            else{
+                nombre.style.background = 'red';
+                apellido.style.background = 'red';
+            }
+        }
+    </script>
+    
+</body>
+</html>

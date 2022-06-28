@@ -1,0 +1,28 @@
+body{
+    /* background-image: url('fondo.jpg'); */
+    font-family: 'Bree Serif', serif;
+}
+.contenedor{
+    margin: 0;
+    /* overflow: hidden; */
+    height: 6em;
+    display: block;
+}
+#titulo{
+    color: #d3d6dd;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: -0.05em;
+    display: block;
+    position: relative;
+}
+#titulo::before{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,66,1) 39%, rgba(255,0,125,1) 100%);    content: var(--contenido);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    inset: 0;
+    animation: in-out 1s infinite alternate;
+}
+

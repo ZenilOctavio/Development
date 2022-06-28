@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <base target="_blank"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- <style>
+        h1{
+            color: crimson;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: blueviolet;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo" onclick="troleito()">Octavio Zenil López</h1>
+    <fieldset>
+        <!-- Para acceder a todos los colores que puedes usar en HTML accede a "HTML color names" -->
+        <p><a href="mailto:urielfdez86@outlook.com?subject=Eres_Hermosa&body=nena_maldision">Mi correo</a>
+            <!-- De esta forma puedo generar correos con una página web -->
+        |
+        <a href="https://zeniloctavio.github.io/portafolio/">GitHub Page</a>
+        |
+        <a href="https://octaviozenil.herokuapp.com">Heroku Page</a></p>
+        <p><a href="index.html">Inicio</a></p>
+    
+    </fieldset>
+    <script>
+        let funcion = ()=>{
+        let titulo = document.getElementById("titulo");
+        titulo.innerHTML = "nuevo Titulo";
+        }
+        let troleito = ()=>{
+            document.getElementById("titulo").innerHTML = "Chingas a tu MADRE alansito";
+        }        
+    </script>
+</body>
+</html>

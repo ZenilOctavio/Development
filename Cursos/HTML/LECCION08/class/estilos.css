@@ -1,0 +1,69 @@
+*{
+    text-align: center;  
+    font-family: sans-serif;
+}
+.info{
+    text-align: justify;
+}
+#barra{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #14213d;
+}
+.indice{
+    float: left;
+}
+h2{
+    text-shadow: 1px 1px #14213d;
+}
+li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    color: #e5e5e5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+li a:hover{
+    background-color: #fca311;
+    color: #14213d;
+}
+#titulo{ 
+    /* Asi se hace referencia a un objeto con un id determinado */
+    color: #14213d;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    background-color: #fca311;
+}
+.Contenedor{
+    /* Asi se le hace referencia a todos los objetos con cierta clase */
+    background-color: #e5e5e5;
+    text-align: center;
+    color: #fca311;
+    /* border: 7px dotted #14213d; */
+    border-radius: 20px;
+    padding: 1px 1px;
+    margin: 5px 5px;
+}
+span{
+    font-weight: bold;
+    color: #14213d;
+    border-bottom: 1px solid #fca311;
+    text-align: center;
+}
+.outer{
+    border: #14213d dotted 7px;
+    margin: 0px 200px;
+    border-radius: 30px;
+    padding: 0px;
+}
+iframe{
+    border: 2px inset #fca311;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+}

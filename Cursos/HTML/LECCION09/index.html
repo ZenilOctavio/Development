@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>    <!--Con action, me refiero al objetivo del form(url), mientra que tarjet, se refiere a donde quiero recibir la respuesta del servidor-->
+    <fieldset>
+        <legend>Datos personales</legend>
+        <form method="GET" action="servidor" target="_blank" autocomplete="off">
+            <!--Puede ser blank o self-->
+            <!--El autocomplete habilita o deshabilita el llenado automático-->
+            <!-- Cuando utilizamos GET queremos acceder a la información dada en la liga, mientras que con POST queremos mandar información, por lo que no se ve en la url -->
+            <!-- Si no especificamos method, el default será GET -->
+            <label for="idPersona">ID: </label><br>
+            <input type="text" id="idPersona" name="idPersona" readonly="true" value="33151" disabled="true"><br>
+            <input type="text" id="idSistema" name="sistema" hidden="true" value="14561684">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/>   <!--Con value puedo tener un valor predeterminado, pero con place holder puedo poner un texto de fondo-->
+            <!-- con required nos dirá que no se pueden mandar valores vacíos -->
+            <!--value="Nombre"-->
+            <br>
+            <label for="apellido">Apellido:</label>
+            <br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"/>
+            <!-- value="Apellido" -->
+            <br>
+            <label for="password">Contraseña:</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required="true"/>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu EMAIL">
+            <br>
+            <label for="edad">Edad:</label>
+            <br>
+            <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad" max="18" min="5" step="any">  <!--Así pongo un intervalo de entre 5 y 18-->
+            <br>
+            <label for="">Género</label>
+            <br>
+            <input type="radio" name="genero" id="femenino" value="femenino"> <label for="femenino">Femenino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino"> <label for="masculino">Masculino</label>
+            <!-- Name tiene que ser el mismo para que se mande solo un valor  -->
+            <br><br>
+            <label for="">Musica preferida</label>
+            <br>
+            <input type="checkbox" name="musica" id="clasica" value="clasica">
+            <label for="clasica">Clasica</label>
+            <br>
+            <input type="checkbox" name="musica" id="jazz" value="jazz">
+            <label for="jazz">Jazz</label>
+            <br>
+            <label for="autos">Marca de auto favorita</label>
+            <select name="autos" id="autos" multiple="true">
+                Tambien se pueden seleccionar más de uno con multiple
+                <option value="volvo">Volvo</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="nissan">Nissan</option>
+                <option value="hyundai" selected="true">Hyundai</option>
+                <!-- Tambien se pueden hacer selecciones por default -->
+            </select>
+            <br>
+            <label for="comentario">Comentario:</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="30" rows="2"></textarea>
+            <br>
+            <input type="submit" value="Enviar"/><!--Con step:any dejo que se puedan ingresar valores con punto decimal-->
+            <input type="submit" value="Enviar sin validar" formnovalidate="formnovalidate"/>
+            <!-- así este boton mandará la info sin validarla -->
+            <input type="reset" value="Reestablecer">
+            <!--Con este boton reinicio los valores predeterminados del form-->
+        </form>
+    
+    </fieldset>
+</body>
+</html>

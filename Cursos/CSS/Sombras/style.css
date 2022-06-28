@@ -1,0 +1,44 @@
+ /* p{
+    font-size: 75px;
+    color: red;
+    text-shadow: black 10px 10px;
+    La primera unidad de medida se refiere al desplazamiento de izquierda a derecha
+    mientras que la segunda el de arriba hacia abajo
+    text-shadow: black 10px 10px 10px;
+    El tercer valor va con la distancia de acción de la sombra
+
+    text-shadow: black 10px 10px 10px, red 0 0 13px;
+    Adamás de que se pueden agregar más colores a la sombra
+
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3px;
+
+    color: yellow;
+    text-shadow: black 3px 3px 1px;
+
+    background-color: coral;
+    width: 400px;
+    height: 150px;
+    font-size: 70px;
+    box-shadow: black 0px 3px 10px 1px ;
+    Inset hace que nuestra sombra se encuentre dentro del objeto
+} */
+
+.tarjeta{
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2), 0 6px 20px ;
+    /* Asi se creará un difuminado desde el de la derecha hasta el de la izquierda */
+}
+.numero{
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.titulo{
+    padding: 5px;
+}

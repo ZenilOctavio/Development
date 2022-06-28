@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Fondos multiples</h1>
+        <p id="fondo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita ipsam odit. Porro culpa nostrum facere esse aspernatur modi dolor iste, qui vel distinctio in fugiat rerum, dolore voluptatibus sapiente deleniti consequatur fugit suscipit laboriosam accusamus maxime non repudiandae. Ea numquam in mollitia nobis, voluptatem possimus tempore reprehenderit consequatur provident!
+        </p>
+    </center>
+    <script>
+        let cadena = document.getElementById('fondo').innerHTML;
+        let palabrasRaw = cadena.split(' ');
+
+        let palabras = [];
+        palabrasRaw.forEach((x) => {
+            if(x != ' ' && x != '\n' && x!= ''){
+                palabras.push(x);
+            }
+        });
+
+        console.table(palabras);
+        console.log("Son "+palabras.length+" palabras");
+    </script>
+</body>
+</html>

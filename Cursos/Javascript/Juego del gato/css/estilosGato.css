@@ -1,0 +1,31 @@
+#tablero{
+    background-color: #A9A9A9;
+    height: 420px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+div.casilla{
+    font-family: sans-serif;
+    background-color: beige;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+div.boton{
+    background-color: rgba(105, 105, 105,.7);
+    padding: 2px, 2px, 2px, 2px;
+    font-size: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+#c00,#c10,#c20{
+    margin-right: 20px;
+}
+#c02,#c12,#c22{
+    margin-left: 20px;
+}

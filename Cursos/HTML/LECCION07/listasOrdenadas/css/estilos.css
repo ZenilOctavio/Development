@@ -1,0 +1,14 @@
+ol{
+    list-style: none;
+    counter-reset: contador; /*Se reinicia el valor del contador en cada nueva lista*/
+}
+ol li{
+    counter-increment: contador;    /*Con cada nuevo elemento se incrementa el valor*/
+}
+ol li::before{ /*Con before podemos especificar algún contenido que vaya a tener el elemento listado antes de su valor*/
+    content: "País - " counter(contador) " ";
+    color: #fca311;
+}
+ol li::after{   /*after sirve igual, solo que después del contenido real del objeto*/
+    content: " - (AMERICA).";
+}

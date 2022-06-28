@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="title">Juego del gato</title>
+    <link rel="stylesheet" href="css/estilosGato.css">
+</head>
+<body>
+    <div id="cabecero"></div>
+    <div id="tablero">
+        <div class="fila">
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c00"><div class="boton" id="00"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c10"><div class="boton" id="10"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c20"><div class="boton" id="20"></div>
+        </div>
+        </div>
+        <div class="fila">
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c01"><div class="boton" id="01"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c11"><div class="boton" id="11"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c21"><div class="boton" id="21"></div>
+        </div>
+        </div>
+        <div class="fila">
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c02"><div class="boton" id="02"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c12"><div class="boton" id="12"></div>
+        </div>
+            <div class="casilla" onmouseover="mouseOn(this)" onmouseout="(mouseOff(this))" onclick="ingresarValor(this)" id="c22"><div class="boton" id="22"></div>
+        </div>
+        </div>
+    </div>
+    <script>
+        let mouseOn = (objeto)=>{
+            objeto.style.color = "green";
+        }
+        let mouseOff = (objeto)=>{
+            objeto.style.color = "black";
+        }
+        let rClick = ()=>{
+            alert("Le has dado click");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/appGato.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con Javascript</title>
+    <style>
+        .azul{
+            color : blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='cabecero'>Ejemplo DOM con Javascript</h1>
+    <p class = 'azul' id= 'parrafo1'>Saludos!</p>
+    <p class = 'azul' id= 'parrafo2'>Otro parrafo</p>
+
+<script>//Así se mete código Javascript a un doc HTML
+    function cambiar(objeto, valor){
+        objeto.innerHTML = valor;
+    }
+    let cabeceroText = document.getElementById('cabecero').innerHTML;//Así se accede al texto del elemento de DOM
+    let parrafoText = document.getElementById('parrafo1').innerHTML;
+    let cabecero = document.getElementById('cabecero');//Así se recupera el objeto
+    let parrafo = document.getElementById('parrafo1');
+    console.log('Saludos desde Javascript');
+    console.log('Cabecero: '+cabecero+'  '+cabeceroText);
+    console.log('Parrafo: '+parrafo+'  '+parrafoText);
+    cambiar(parrafo,'Nuevo valor');
+    cambiar(cabecero,'Nuevo cabecero');
+
+    let parrafos = document.getElementsByTagName('p');  //Puede devolver un arreglo de valores
+    console.log(`No. parrafos: ${parrafos.length}`);
+    for(let i = 0; i < parrafos.length; i++){
+        console.log(`i: ${i+1} = ${parrafos[i].innerHTML}`);
+    }
+
+    let parrafosAzul = document.getElementsByClassName('azul');
+    console.log('\nElementos azules');
+    for(let i = 0; i < parrafosAzul.length; i++){
+        console.log(`Elemento ${i+1}: ${parrafosAzul[i].innerHTML}`);
+    }
+
+    //También se puede hacer esto
+    let azules = document.querySelectorAll('p.azul');//Así especifico que sean elementos de tipo 'p'
+    for(let elemento of azules){
+        console.log(elemento.innerHTML);
+    }
+    
+/*
+Para poder hacer referencias a objetos HTML, el script tiene que 
+estar puesto después del objeto.
+*/
+</script>
+    
+</body>
+</html>

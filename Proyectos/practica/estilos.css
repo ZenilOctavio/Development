@@ -1,0 +1,112 @@
+/* html{ */
+/* background-color: #212529; */
+/* } */
+/* #texto{ */
+/* font-size: large; */
+/* white-space: nowrap; */
+/* display: block; */
+/* font-family: monospace; */
+/* color: #e9ecef; */
+/* overflow: hidden; */
+/* border-bottom: 5px solid; */
+/* animation: aparicion 9s steps(33); */
+/* width: 33ch; */
+/* } */
+/* @keyframes aparicion { */
+/* from{ */
+/* width: 0; */
+/* } */
+/* } */
+/* @keyframes iteracion { */
+/* 50%{ */
+/* border-bottom: transparent; */
+/* } */
+/* } */
+/* div{ */
+/* display: flex; */
+/* } */
+
+/* #cursor{ */
+/* color: #e9ecef; */
+/* float: left; */
+/* animation: iteracion .5s step-end alternate infinite; */
+/* border-bottom: 4px solid; */
+/* } */
+
+#figura {
+  height: 200px;
+  width: 70px;
+  background-color: #3498db;
+  border-radius: 150px;
+  position: relative;
+}
+#figura::after {
+  /* content: '';
+    position: absolute;
+    width: 10px; 
+    height: 5px; 
+    border-width: 2px;
+    border-style: solid;
+    border: 2px solid #555;
+    border-image: linear-gradient(45deg, yellow 0.5px, yellow 1px, red 1px, red 2px);
+    -moz-border-radius: 0 0 100px 100px;
+    -webkit-border-radius: 0 0 100px 100px; */
+    
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: repeating-linear-gradient(white,white) padding-box,
+    linear-gradient(-45deg, #DB4534 50%, #DB4534 50%,#F6B327 50%,#F6B327 50% ) border-box;
+    /* border-radius: 50em; */
+    border-radius: 0 0 100px 100px;
+    border: 20px solid transparent;
+    border-top: none; 
+    top: 190px;
+    right: -40px;
+}
+#figura{
+    position: relative;
+    width: 100px; 
+    height: 50px; 
+    border-width: 20px;
+    border-style: solid;
+    border: 20px solid #555;
+    border-image: linear-gradient(45deg, yellow 0.5px, yellow 1px, red 1px, red 2px);
+    -moz-border-radius: 0 0 1000px 1000px;
+    -webkit-border-radius: 0 0 1000px 1000px;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: repeating-linear-gradient(white,white) padding-box,
+    linear-gradient(-45deg, #DB4534 50%, #DB4534 50%,#F6B327 50%,#F6B327 50% ) border-box;
+    /* border-radius: 50em; */
+    border-radius: 0 0 1000px 1000px;
+    border: 20px solid transparent;
+    border-top: none; 
+    top: 190px;
+    right: -40px;
+}
+#figura::after{
+    height: 150px;
+    width: 70px;
+    background: none;
+    background-color: #3498db;
+    border-radius: 150px;
+    position: absolute;
+    content: '';
+    border: none;
+    top: -120px;
+    left: 15px;
+}
+#figura::before{
+    position: absolute;
+    content: '';
+    background: none;
+    background-color: #27AF38;
+    border: none;
+    width: 20px;
+    height: 30px;
+    top: 69px;
+    left: 40px;
+}

@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con Javascript</title>
+</head>
+<body>
+    <h1 id= 'titulo'>Manejo DOM con Javascript</h1>
+    <button onclick='mostrar()'>Estilo</button>
+    <br/>
+    <script>
+        document.getElementById('titulo').style.color = '';
+        let mostrar = () =>{
+            document.getElementById('titulo').style.color = 'blue'
+        }
+    </script>
+</body>
+</html>

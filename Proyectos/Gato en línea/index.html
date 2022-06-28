@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gato-menú</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kanit:wght@300&family=Nova+Flat&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1 id="titulo" style="--contenido: 'JUEGO DEL GATO';">JUEGO DEL GATO</h1>
+    </div>
+    <hr class="divisor" />
+    <div class="contenedor">
+      <div class="confi">
+        <div class="labels">
+          <div class="jugador">
+            <label class="etiqueta" for="jugador1">Jugador 1</label>
+            <input
+              type="text"
+              class="entrada-caracter"
+              id="jugador1"
+              name="jugador1"
+              maxlength="1"
+              value="X"
+            />
+          </div>
+          <div class="jugador">
+            <label class="etiqueta" for="jugador2">Jugador 2</label>
+            <input
+              type="text"
+              class="entrada-caracter"
+              id="jugador2"
+              name="jugador2"
+              maxlength="1"
+              value="O"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color: #457b9d;
+}
+h2{
+    color:#f72585;
+}
+p{
+    color: #3f37c9;
+}
+div{
+    border: 10px solid #560bad;
+    text-align: center;
+    /* Los div utilizan todo el espacio disponible desde izquierda a derecha. Por eso se utilizan para hacer secciones */
+    
+}

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Eventos</title>
+</head>
+<body>
+    <h1 onclick="cambiarTexto(this);">Manejo DOM con Javascript</h1>
+    <form id = 'formulario'>
+        Titulo: <input type="text" name="Titulo" value="">
+    </form>
+    <script>
+        let cambiarTexto = (objeto) => {
+            objeto.innerHTML = document.getElementById('formulario')['Titulo'].value;
+            document.getElementById('formulario')['Titulo'].value = '';
+        }
+    </script>
+</body>
+</html>

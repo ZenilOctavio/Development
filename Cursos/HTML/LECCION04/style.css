@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #6b705c;
+    margin: 10px 0px 0px 0px;
+    padding: 50px;
+    border-radius: 30px;
+    border: #ffe8d6;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+fieldset{
+    border: #6b705c dotted 5px;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffe8d6;
+    padding: 30px 60px;
+    border-radius:15px;
+    border: 3px solid #cb997e;
+    color: #ffe8d6;
+    font-weight: 800;
+    /* margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 25px; 
+    Esto es lo mismo 
+        margin: 50px 0px 15px 25px;
+    Pero si queremos que el left y el right sea el mismo:
+        margin: 50px 15px 20px;
+    Y si quieres el mismo para top-bottom y right-left:
+    */
+    margin: 0px 30px ;
+
+}
+body{
+    background-color: #a5a58d;
+}

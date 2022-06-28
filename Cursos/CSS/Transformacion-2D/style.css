@@ -1,0 +1,28 @@
+.container{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(60deg, orange, yellow);
+    /* border: 7px solid darkred; */
+/* }
+.container:hover{ */
+    /* transform: translateY(200px); */
+    /* transform: rotate(45deg); */
+    /* El movimiento horizontal esta determinado por X */    
+
+    /* transform: scaleX(2); */
+    /* multiplica el valor actual del elemento por un numero */
+    /* transform: skewX(); */
+    /* estira mediante un angulo en x */
+
+    animation: skew 3s infinite;
+    transform: swek(20deg);
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0%{
+        transform: skew(20deg, 20deg);
+    }
+    100%{
+        transform: skew(-20deg, -20deg);
+    }
+}

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title id= 'titulo'>Nanejo DOM con Javascript</title>
+    <h1>Manejo de DOM</h1>
+    <br/>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <img id='imagen' src= 'http://globalmentoring.com.mx/imagenes/javascript.png'>
+</head>
+<body>
+    <script>
+        //document.write('Javascript');
+        function mostrar(){//Se tiene que tener cuidado ya que document.write puede sobreescribir todo el contenido
+          //document.write('Adios');
+          //Para cargar un elemento se tiene que especificar la ruta del mismo si no se encuentra en la misma carpeta que el proyecto
+          document.getElementById('imagen').src = 'http://globalmentoring.com.mx/imagenes/html5.png';
+        }
+        document.getElementById('titulo').innerHTML = 'New Title';
+    </script>
+</body>
+</html>

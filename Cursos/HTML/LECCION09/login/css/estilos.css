@@ -1,0 +1,111 @@
+*{
+        font-family: "Nova flat";
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#f4f1de,#e9ecef);
+
+}
+.boton{
+    display: flex;
+    width: 100%;
+    /* text-align: center; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* justify-items: center; */
+    /* justify-self: center; */
+    /* align-self: center; */
+}
+.barra{
+    position: sticky;
+    display: block;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background-color: #81b29a;
+    /* border-radius: 15px; */
+    /* width: 100%; */
+}
+.opcion-barra{
+    float: left;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.opcion-barra:hover{
+    background-color: #f2cc8f;
+    border-bottom: 5px solid #81b29a;
+}
+.contenedor{
+    margin: 30px auto;
+    width: 400px;
+    background-color: rgba(61, 64, 91, .9);
+    border-radius: 20px;
+    padding: 40px;
+    height: 300px;
+    /* overflow: hidden; */
+    justify-items: center;
+}
+label,input{
+    display: block;
+    width: 100%;
+}
+.usuario input, .contraseña input{
+    padding: 10px 0;
+    color: #ffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    margin-bottom: 20px;
+    outline: none;   
+}
+label{
+    color: #ffff;
+}
+input[type="submit"]{
+    line-height: 50%;
+    background-color: #e07a5f;
+    border: 3px solid #e07a5f;
+    height: 50px;
+    width: 300px;
+    color: #ffff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    /* con pointer el cursor se pone como una manita */
+    padding: 15px;
+    /* margin-top: 30px auto 0; */
+    /* animation: desredondeo .5s forwards; */
+    border-radius: 20px;
+}
+@keyframes desredondeo {
+    to{
+        border-radius: 0;
+    }
+}
+input[type="submit"]:hover{
+    background-color: #e9ecef;
+    color: black;
+    animation: redondeo .1s both;
+    transition: redondeo .1s cubic-bezier(0,0,0,0);
+}
+@keyframes redondeo {
+    to{
+        width: 340px;
+        height: 60px;
+    }
+}
+h2{
+    color: #ffff;
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 2em;
+}

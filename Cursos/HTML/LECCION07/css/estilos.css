@@ -1,0 +1,28 @@
+html{
+    font-family: 'Nunito';
+}
+h1{
+    color: #264653;
+}
+#barra_navegacion{
+    list-style-type: none; /*Así se quita el formato de la lista*/
+    background-color: #2a9d8f;
+    overflow: hidden; /*Para que no se combine con los otros elementos, y se vea como un bloque independiente*/
+    margin: 0;
+    padding: 0;
+}
+.indice{
+    float: left; /*Así se acomodan de izquierda a derecha en forma horizontal*/
+}
+/* Asi se puede aclarar para aplicar a los links dentro de las listas */
+li a{
+    text-decoration: none;
+    color: #e9c46a;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
+}
+li a:hover{
+    background-color: #264653;
+}

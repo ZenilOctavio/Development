@@ -1,0 +1,29 @@
+#degradado{
+    border: 2px solid black;
+    width: 480px;
+    height: 480px;
+    background: linear-gradient(to left,orange,red);
+    /* Las opciones son: to left, to right, to top, to bottom */
+    /* De esta forma podemos crear un degradado desde naranja a rojo, de forma linear */
+    /* También se pueden utilizar grados
+    */
+    background: linear-gradient(60deg,orange,red);
+    /* Se puede añadir un porcentaje a los colores para aumentar su presencia */
+    /* Si se añade porcentaje al ultimo color y un repeating, se comienza a repetir el patron de degradado */
+    background: repeating-linear-gradient(60deg,orange,red,pink 10%);
+
+    /* De forma radial */
+    background: radial-gradient(blue, cyan);
+    /* De igual manera, se pueden utilizar porcentajes */
+    background: radial-gradient(blue, cyan 80%);
+    /* Se puede dar forma y posición */
+    background: radial-gradient(circle at top right,yellow, orange);
+    /* Tambien pasa lo del corte con repeat */
+    background: repeating-radial-gradient(blue, cyan 5%);
+
+    /*Utilizar degradados para crear formas o patrones*/t
+
+    background: repeating-linear-gradient(
+        45deg,yellow,yellow 10px,red 10px, red 20px
+    );
+}

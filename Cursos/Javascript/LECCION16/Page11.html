@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de DOM con Javascript</title>
+</head>
+<body>
+    <h1>Registro de datos</h1>
+    <h2 id="usuario">No hay usuario</h2>
+    <div id="division" ></div>
+    <br></br>
+    <form id="form">
+        Nombre: <input type="text" value="" name="nombre">
+        Apellido: <input type="text" value="" name="apellido">
+    </form>    
+    <button id="boton" onclick="verificar()">Verificar</button>
+    
+    <script>
+        console.log("todo bien");
+        document.getElementById('form').addEventListener('focus',fijado,true);//Con el parametro 'true' se establece que el evento se aplique en los elementos internos del formulario
+        document.getElementById('form').addEventListener('blur',desfijado,true);
+
+        function fijado(evento){
+            evento.target.style.background = 'pink';
+        }
+        function desfijado(evento){
+            evento.target.style.background = 'white';
+        }
+        function verificar(){
+            let nombre = document.getElementById('form')['nombre'].value;
+            let apellido = document.getElementById('form')['apellido'].value;
+            
+            if((nombre == "Toca")&&(apellido == "Monos")){
+                console.log(nombre + " " + apellido);
+                document.getElementById('usuario').innerHTML = nombre + " " + apellido;
+
+                for (let i = 0; i < document.getElementById('form').length; i++){
+                    document.getElementById('form')[i].style.background = 'green';
+                }
+            }
+            else{
+                for (let i = 0; i < document.getElementById('form').length; i++){
+                    document.getElementById('form')[i].style.background = 'red';
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

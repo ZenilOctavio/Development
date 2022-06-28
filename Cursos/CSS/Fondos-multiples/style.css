@@ -1,0 +1,18 @@
+#fondo{
+    /* padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    background: url(naruto.png) top right/100px  no-repeat,url(solecito.jpg) center/100% 100%/
+     */
+
+    /* Cuando se declara un fondo se hace la siguiente estructura
+    background(ruta)(posición)(dimensión) no-repeat */
+
+    /* Usualmente esta repeat como defecto */
+
+    /* Para posición los valores son: 
+    top,right,bottom,left,center*/
+    
+    /* background-: 100%; */
+}
